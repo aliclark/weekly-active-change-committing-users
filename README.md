@@ -1,5 +1,5 @@
 # Weekly Active Change-Committing Users
-## Number of users changing ten or more lines of any given file type each week
+## Number of users changing ten or more lines for any given file type each week
 
 ### Algorithm to ignore spam
 
