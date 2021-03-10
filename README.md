@@ -7,7 +7,7 @@ The raw commit data on GitHub is not representative, as it's mostly automation c
 
 These can be filtered by looking at the histogram of counts and only considering where `A > B` (given that we want to only consider `A` where it is at the same order, or at a larger order of magnitude than `B`).
 
-For example, we may want to only consider user logins where the number of user logins having a given number of authors committing via that user login is greater than the number of user logins. Whatever that threshold is will be the cut-off. In the extreme case, `github-actions` account might commit on behalf of exactly 9000 authors, but since there is only 1 account committing that number of unique authors, trivially the check `9000 <= 1` is not satisfied, and `github-actions` can be ignored.
+For example, we may want to only consider `user logins` where the `number of user logins` having a `given number of authors committing` via that `user login` is greater than the `number of user logins`. Whatever that threshold is will be the cut-off. In the extreme case, `github-actions` account might commit on behalf of exactly 9000 authors, but since there is only 1 account committing that number of unique authors, trivially the check `9000 <= 1` is not satisfied, and `github-actions` can be ignored.
 
 From this reduced set we can continue to further reduce by looking at other variables and ignoring "spammy values" for each variable.
 
